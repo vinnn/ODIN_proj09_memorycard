@@ -7,12 +7,16 @@
   flex-wrap: wrap;
   gap: 2vw;
   justify-content:space-evenly;
-
 }
 
 .card {
   width: 20vw;
-  height: 20vw;
+  height: 20vh;
 
+  font-weight: 800;
+
+  padding: 1rem;
   text-align: center;
+
+  border: 5px solid black;
 }

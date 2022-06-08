@@ -1,6 +1,9 @@
 
 .div-header {
-  height: 3rem;
+  height: 6rem;
+  margin: 0 2rem 0 2rem; 
+  background-color: rgb(253, 253, 232);
+  border: 3px solid black;
 
   display: flex;
   justify-content: space-evenly;
@@ -8,5 +11,20 @@
 
 .div-title, .div-score, .div-bestscore {
   text-align: center;
-  padding: 0.5rem;
+  padding: 2px;
+
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.div-title {
+  color: red;
+}
+
+.div-score {
+   color: green;
+}
+
+.div-bestscore {
+  color: blue;
 }

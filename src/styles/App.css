@@ -1,19 +1,13 @@
 
 * {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   box-sizing: border-box;
   margin: 0;
 }
 
 .div-cont {
-
   height: 99vh;
 
   display: flex;
   flex-direction: column;
 }
-
-
-
-
-/*  */

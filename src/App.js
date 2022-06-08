@@ -1,9 +1,7 @@
 import Header from './components/Header';
 import Board from './components/Board';
 import './styles/App.css';
-
 import React, { useEffect, useState } from 'react';
-
 
 
 function App() {
@@ -11,18 +9,23 @@ function App() {
   // ##########################################
   // DATA
   // ##########################################
-
   const cards = [
-      {id: 0, imgLink: "#", text: "card0"},
-      {id: 1, imgLink: "#", text: "card1"},
-      {id: 2, imgLink: "#", text: "card2"},
-      {id: 3, imgLink: "#", text: "card3"},
-      {id: 4, imgLink: "#", text: "card4"},
-      {id: 5, imgLink: "#", text: "card5"}
+      {id: 0, imgLink: "#", text: "card0", color: "blue", textColor: "white"},
+      {id: 1, imgLink: "#", text: "card1", color: "yellow", textColor: "black"},
+      {id: 2, imgLink: "#", text: "card2", color: "red", textColor: "white"},
+      {id: 3, imgLink: "#", text: "card3", color: "green", textColor: "white"},
+      {id: 4, imgLink: "#", text: "card4", color: "orange", textColor: "black"},
+      {id: 5, imgLink: "#", text: "card5", color: "black", textColor: "white"},
+      {id: 6, imgLink: "#", text: "card6", color: "white", textColor: "black"},
+      {id: 7, imgLink: "#", text: "card7", color: "purple", textColor: "white"},
+      {id: 8, imgLink: "#", text: "card8", color: "grey", textColor: "white"},
+      {id: 9, imgLink: "#", text: "card9", color: "pink", textColor: "black"},
+      {id: 10, imgLink: "#", text: "card10", color: "magenta", textColor: "white"},
+      {id: 11, imgLink: "#", text: "card11", color: "cyan", textColor: "black"}
     ];
 
     const shuffleDisplayOrder = () => {
-      return [0,1,2,3,4,5].sort(() => Math.random() - 0.5);
+      return [0,1,2,3,4,5,6,7,8,9,10,11].sort(() => Math.random() - 0.5);
     }
 
 
@@ -46,12 +49,9 @@ function App() {
   const [score, setScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
 
-
-
   useEffect(() => {
 
     if (clickCount > 0) {
-
             // _________________________IF CARD SELECTED, CHECKS:
             // check if the card selected was already selected
             // filter the cards with this index (if no card then continue)
@@ -59,14 +59,11 @@ function App() {
             console.log(alreadySelected)
 
             if (alreadySelected) {
-
                 // restart/initialise:
                 setClickCount(0);
                 setScore(0);
                 setCardIdsSelected([]);
-
             } else {
-
                 // add the new selected card index in the cards selected array:
                 setCardIdsSelected( cardIdsSelected.concat(newCardIdSelected) );
 
@@ -75,7 +72,6 @@ function App() {
                 let newscore = score + 1;
                 setScore(newscore);
                 setBestScore( newscore > bestScore? newscore : bestScore );              
-
             }
 
             // _________________________RANDOMIZE THE CARD ORDER:    
@@ -90,13 +86,15 @@ function App() {
   // ##########################################
   // FUNCTIONS
   // ##########################################
-
   const addNewCardSelected = (e) => {
     setClickCount(clickCount + 1);      
     const selectedCardIndex = e.target.attributes.cardindex.value;
     setNewCardIdSelected(selectedCardIndex);
   }
 
+  // ##########################################
+  // RENDER
+  // ##########################################  
   const data = {
     cards: cards,
     cardDisplayOrder: cardDisplayOrder,

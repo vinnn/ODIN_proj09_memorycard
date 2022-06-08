@@ -17,8 +17,13 @@ export default function Board ( { data, methods } ) {
                         className="card" 
                         key={iorder} 
                         cardindex={cards[iorder].id} 
-                        onClick={ addNewCardSelected }>
-                    {cards[iorder].text}
+                        onClick={ addNewCardSelected }
+                        style={{
+                            color: cards[iorder].textColor, 
+                            backgroundColor: cards[iorder].color, 
+                            }}
+                        >
+                    {cards[iorder].color}
                     </div>
                 )
             })}

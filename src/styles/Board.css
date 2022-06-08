@@ -1,0 +1,18 @@
+
+.div-board {
+  padding: 2vw;
+
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content:space-evenly;
+
+}
+
+.card {
+  width: 20vw;
+  height: 20vw;
+
+  text-align: center;
+}

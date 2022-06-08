@@ -4,7 +4,9 @@
 Practice React, functional components / hooks
 
 ### Link
-https://vinnn.github.io/ODIN_cv/
+https://vinnn.github.io/ODIN_memorycard/
+
+
 
 
 

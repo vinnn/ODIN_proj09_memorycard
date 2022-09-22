@@ -1,10 +1,21 @@
-# Memory Card Project
+# ODIN_memorycard 
 
-### Purpose
-Practice React, functional components / hooks
+## Motivation
+This project is to practice the concepts learned in the Odin Project - Full Stack Javascript - Javascript - React lessons.
+- React, state, hooks, functional components
 
-### Link
+## Concepts covered
+- HTML5, CSS, Javascript
+- React, state, hooks
+- Git/Github
+
+## View page
 https://vinnn.github.io/ODIN_memorycard/
+
+## Thank you
+Thank you the Odin Project
+and to the very helpful providers of internet resources 
+
 
 
 NOTE: each card represents a different color, which was 

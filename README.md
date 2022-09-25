@@ -10,7 +10,7 @@ This project is to practice the concepts learned in the Odin Project - Full Stac
 - Git/Github
 
 ## View page
-https://vinnn.github.io/ODIN_memorycard/
+https://vinnn.github.io/ODIN_proj09_memorycard/
 
 ## Thank you
 Thank you the Odin Project
